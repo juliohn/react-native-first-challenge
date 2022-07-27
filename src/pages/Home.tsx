@@ -30,8 +30,8 @@ export function Home() {
   }
 
   function handleRemoveTask(id: number) {    
-    const newTasks = tasks.filter(function(obj) {
-      return obj.id !== id;
+    const newTasks = tasks.filter(function(task) {
+      return task.id !== id;
     })
 
     setTasks(newTasks);        
